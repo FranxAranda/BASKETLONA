@@ -1,0 +1,196 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+@import "~bootstrap/scss/bootstrap"; 
+@import "variables";
+
+main {
+  flex-grow: 1;
+  margin-bottom: 120px; 
+} 
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-medium;  
+  background-color: $color-primary;  
+
+}
+
+.header img {
+  max-width: 150px;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: $color-text;  // Variable de color para el texto
+}
+
+.hero {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-secondary; // Variable de color
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 40px;
+  text-align: center;
+  background-color: $color-background; // Variable de color
+}
+
+.info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  line-height: 1.6;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-medium; // Variable de espaciado
+  background-color: $color-primary; // Variable de color
+}
+
+.footer nav {
+  margin-bottom: 20px;
+}
+
+.footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: $color-text; // Variable de color para el texto
+}
+
+.social-media a {
+  margin: 0 5px;
+  font-size: 24px;
+  color: $color-text; // Variable de color para el texto
+}
+
+/* pagetwo.html Estilos para la sección de jugadores */
+.chefs-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px; 
+}
+
+.chef {
+  width: 30%;
+  text-align: center;
+}
+
+.chef img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilos para pagethree.html y el artículo */
+.article {
+  width: 80%; /* Ajusta el ancho del artículo según tus necesidades */
+  margin: 0 auto; /* Centra el artículo */
+  padding: $spacing-medium;
+}
+
+.article h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.article p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Para evitar problemas de espacio en blanco */
+  margin: 2rem auto; /* Centra la imagen */
+}
+
+/* Estilos para listas */
+.article ol,
+.article ul {
+  list-style-position: inside; /* Coloca los marcadores dentro de la lista */
+  margin-bottom: 1rem;
+}
+
+/* Estilos para blockquote */
+.article blockquote {
+  border-left: 5px solid $color-primary; /* Añade una línea vertical a la izquierda */
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+/* Estilos para el formulario de contacto */
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: $spacing-medium;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: $color-primary;
+  color: $color-text;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
